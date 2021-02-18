@@ -1,0 +1,5 @@
+[user]
+	email = dkiedanski@tryolabs.com
+	name = Diego Kiedanski
+[core]
+	editor = neovim

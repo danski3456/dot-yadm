@@ -1,0 +1,22 @@
+# General alias
+alias ls="ls -G"
+alias l="ls -lah"
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+
+# Git
+alias g="git"
+alias git-tree="git log --graph --abbrev-commit --pretty=oneline"
+
+# Neovim
+alias v="nvim"
+alias vim="nvim"
+
+alias Rz="source ~/.zshrc"
+alias tmux="tmux -f ${HOME}/.config/tmux/tmux.conf"
+
+# Python
+alias S="source venv/bin/activate"
+alias ipy="ipython --matplotlib=tk --no-confirm-exit --no-banner --quick --InteractiveShellApp.extensions=\"['autoreload']\" --InteractiveShellApp.exec_lines=\"['%autoreload 2', 'import os,sys']\""
