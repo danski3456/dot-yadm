@@ -1,0 +1,11 @@
+brew neovim
+brew tmux
+brew reattach-to-user-namespace
+brew less
+brew pyenv
+brew openssl 
+brew readline 
+brew sqlite3
+brew xz 
+brew zlib
+

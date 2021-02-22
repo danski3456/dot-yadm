@@ -7,7 +7,7 @@ source_if_exists () {
 source_if_exists "$HOME/.config/alias"
 
 ## Vim mode
-#bindkey -v
+bindkey -v
 
 # Prompt
 autoload -Uz promptinit
@@ -17,3 +17,6 @@ prompt fade white grey blue
 # Basic completition
 autoload -Uz compinit && compinit
 
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
