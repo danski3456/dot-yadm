@@ -1,11 +1,23 @@
-brew neovim
-brew tmux
-brew reattach-to-user-namespace
-brew less
-brew pyenv
-brew openssl 
-brew readline 
-brew sqlite3
-brew xz 
-brew zlib
-
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+tap "homebrew/services"
+tap "koekeishiya/formulae"
+brew "cmake"
+brew "jq"
+brew "less"
+brew "luarocks"
+brew "luv"
+brew "neovim", args: ["HEAD"]
+brew "pkg-config"
+brew "pyenv"
+brew "reattach-to-user-namespace"
+brew "tmux"
+brew "trash"
+brew "tree"
+brew "wget"
+brew "yadm"
+brew "zsh"
+brew "koekeishiya/formulae/skhd"
+brew "koekeishiya/formulae/yabai"
+cask "iterm2"

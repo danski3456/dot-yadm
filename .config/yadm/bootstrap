@@ -10,9 +10,9 @@ if [ "$system_type" = "Darwin" ]; then
     /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   fi
 
-  if [ -f "$HOME/.Brewfile" ]; then
+  if [ -f "$HOME/.config/brewfile" ]; then
     echo "Updating homebrew bundle"
-    brew bundle --global --file="$HOME/.config/brewfile"
+    brew bundle --file="$HOME/.config/brewfile"
   fi
 
   if [ -d "$HOME/.iterm2" ]; then

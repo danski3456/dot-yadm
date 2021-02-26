@@ -6,6 +6,12 @@ source_if_exists () {
 
 source_if_exists "$HOME/.config/alias"
 
+# History 
+setopt inc_append_history
+setopt hist_ignore_all_dups
+setopt hist_ignore_space
+
+
 ## Vim mode
 bindkey -v
 
