@@ -12,8 +12,13 @@ setopt hist_ignore_all_dups
 setopt hist_ignore_space
 
 
+
+
 ## Vim mode
 bindkey -v
+
+# Search History
+bindkey "^R" history-incremental-search-backward
 
 # Prompt
 autoload -Uz promptinit
