@@ -5,6 +5,7 @@ source_if_exists () {
 }
 
 source_if_exists "$HOME/.config/alias"
+source_if_exists "$HOME/.config/functions/docker-functions"
 
 # History 
 setopt inc_append_history

@@ -19,7 +19,11 @@ alias tmux="tmux -f ${HOME}/.config/tmux/tmux.conf"
 
 # Python
 alias S="source .venv/bin/activate"
+alias D="deactivate"
 alias ipy="ipython --matplotlib=tk --no-confirm-exit --no-banner --quick --InteractiveShellApp.extensions=\"['autoreload']\" --InteractiveShellApp.exec_lines=\"['%autoreload 2', 'import os,sys']\""
 
 # Docker
 alias docker-rm-all='docker ps -a | awk "{print \$1}" | xargs docker rm -f'
+
+# Ctags mac
+alias ctags="`brew --prefix`/bin/ctags"
