@@ -1,0 +1,6 @@
+source_if_exists () {
+	[[ -f "$1" ]] && source "$1"
+}
+
+source_if_exists "$XDG_CONFIG_HOME/alias"
+source_if_exists "$XDG_CONFIG_HOME/functions/docker-functions"
