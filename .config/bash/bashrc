@@ -10,3 +10,8 @@ case "$TERM" in
     xterm-color|*-256color) color_prompt=yes;;
     xterm) color_prompt=yes;;
 esac
+
+# Pyenv
+if command -v pyenv >/dev/null 2>&1; then
+	eval "$(pyenv init -)"
+fi
