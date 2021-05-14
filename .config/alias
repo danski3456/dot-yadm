@@ -1,6 +1,9 @@
 # General alias
-alias ls="ls -G"
+alias ls="ls --color=auto"
 alias l="ls -lah"
+
+# Grep
+alias grep="grep --color=auto"
 
 alias ..="cd .."
 alias ...="cd ../.."

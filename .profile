@@ -47,6 +47,10 @@ if command -v nvim >/dev/null 2>&1; then
 	export EDITOR="nvim"
 fi
 
+LS_COLORS=$LS_COLORS:'di=0;35:'
+export LS_COLORS
+
+
 
 # Bash rc
 source "$XDG_CONFIG_HOME/bash/bashrc"
