@@ -1,6 +1,9 @@
 # General alias
-alias ls="ls -G"
+alias ls="ls --color=auto"
 alias l="ls -lah"
+
+# Grep
+alias grep="grep --color=auto"
 
 alias ..="cd .."
 alias ...="cd ../.."
@@ -26,4 +29,4 @@ alias ipy="ipython --matplotlib=tk --no-confirm-exit --no-banner --quick --Inter
 alias docker-rm-all='docker ps -a | awk "{print \$1}" | xargs docker rm -f'
 
 # Ctags mac
-alias ctags="`brew --prefix`/bin/ctags"
+$ISMAC && alias ctags="`brew --prefix`/bin/ctags"
