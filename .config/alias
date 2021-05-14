@@ -26,4 +26,4 @@ alias ipy="ipython --matplotlib=tk --no-confirm-exit --no-banner --quick --Inter
 alias docker-rm-all='docker ps -a | awk "{print \$1}" | xargs docker rm -f'
 
 # Ctags mac
-alias ctags="`brew --prefix`/bin/ctags"
+$ISMAC && alias ctags="`brew --prefix`/bin/ctags"
