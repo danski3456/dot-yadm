@@ -4,3 +4,9 @@ source_if_exists () {
 
 source_if_exists "$XDG_CONFIG_HOME/alias"
 source_if_exists "$XDG_CONFIG_HOME/functions/docker-functions"
+
+# Colors
+case "$TERM" in
+    xterm-color|*-256color) color_prompt=yes;;
+    xterm) color_prompt=yes;;
+esac

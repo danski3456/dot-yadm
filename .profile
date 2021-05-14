@@ -18,8 +18,6 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Matplotlib
 # export MPLBACKEND="module://mpldock.backend"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
 
 # Poetry
 export POETRY_VIRTUALENVS_IN_PROJECT=true
