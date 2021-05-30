@@ -1,5 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =0
+let g:netrw_dirhistcnt =2
+let g:netrw_dirhist_2='/Users/danski/github/solutions-autopricing/repassa'
+let g:netrw_dirhist_1='/Users/danski/github/solutions-autopricing/examples'
 let g:netrw_dirhist_0='/Users/danski/github/pydanski/examples'
 let g:netrw_dirhist_9='/Users/danski/github/example-pentaho-docker/project'
 let g:netrw_dirhist_8='/Users/danski/github/example-pentaho-docker'
@@ -8,5 +10,3 @@ let g:netrw_dirhist_6='scp://dkiedanski@lecun//home/dkiedanski/cfl-parking-occup
 let g:netrw_dirhist_5='scp://dkiedanski@lecun//home/dkiedanski/cfl-parking-occupancy/project/'
 let g:netrw_dirhist_4='scp://dkiedanski@lecun/home/dkiedanski/cfl-parking-occupancy/project/'
 let g:netrw_dirhist_3='scp://dkiedanskilecun/home/dkiedanski/cfl-parking-occupancy/'
-let g:netrw_dirhist_2='scp://dkiedanskilecun/home/dkiedanski/cfl-parking-occupancy/project/'
-let g:netrw_dirhist_1='/Users/danski/.config/nvim'

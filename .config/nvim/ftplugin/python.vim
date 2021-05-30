@@ -14,6 +14,7 @@ let g:ultisnips_python_style = 'numpy'
 
 
 abbr _pdb import pdb; pdb.set_trace()
+abbr _cell # %%
 
 " autocmd BufWritePost *.py :! command -v black >/dev/null 2>&1 && {black %}
 " autocmd BufWritePost *.py :! command -v isort >/dev/null 2>&1 && {isort %}

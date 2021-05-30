@@ -1,9 +1,10 @@
 # Find operating system
 
+ostype="$OSTYPE"
 ISMAC=false
 ISLINUX=false
-[[ $OSTYPE == "darwin*" ]] && ISMAC=true
-[[ $OSTYPE == "linux-gnu" ]] && ISLINUX=true
+[[ $ostype =~ "darwin" ]] && ISMAC=true
+[[ $ostype =~ "linux-gnu" ]] && ISLINUX=true
 export ISMAC
 export ISLINUX
 
@@ -16,22 +17,23 @@ export XDG_CACHE_HOME="$HOME/.cache"
 # Local executables
 export PATH="$HOME/.local/bin:$PATH"
 
+# Bash
+mkdir -p "$XDG_DATA_HOME/bash"
+export HISTIGNORE="s*"
+export HISTCONTROL="ignoreboth:erasedups"
 
-# Matplotlib
-# export MPLBACKEND="module://mpldock.backend"
 
 # Poetry
 export POETRY_VIRTUALENVS_IN_PROJECT=true
-export PATH="/Users/danski/github/myscripts:$PATH"
+
 
 # Less history
 export LESSHISTFILE="$XDG_CACHE_HOME"/less/history
 
-
 # Pyenv configuration
 source "$XDG_CONFIG_HOME/pyenv/pyenv.conf"
 if command -v pyenv >/dev/null 2>&1; then
-	eval "$(pyenv init --path)"
+	eval "$(pyenv init -)"
 	eval "$(pyenv virtualenv-init -)"
 fi
 

@@ -15,3 +15,19 @@ esac
 if command -v pyenv >/dev/null 2>&1; then
 	eval "$(pyenv init -)"
 fi
+
+# Search history
+
+export HISTSIZE=10000
+export HISTSIZEFILE=10000
+shopt -s histappend
+
+
+
+bind '"\e[1;5A":history-search-backward'
+bind '"\e[1;5B":history-search-forward'
+bind '"\e[1;5C":forward-word'
+bind '"\e[1;5D":backward-word'
+
+# Bash Prompt
+export PS1="\u@\h:\[\e[32m\]\w\[\e[m\] "

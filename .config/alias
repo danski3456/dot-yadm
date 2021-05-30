@@ -1,5 +1,7 @@
 # General alias
-alias ls="ls --color=auto"
+
+$ISLINUX && alias ls="ls --color=auto"
+$ISMAC && alias ls="ls -G"
 alias l="ls -lah"
 
 # Grep
@@ -10,6 +12,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 
 # Git
+alias gs="git status"
 alias g="git"
 alias git-tree="git log --graph --abbrev-commit --pretty=oneline"
 
@@ -30,3 +33,6 @@ alias docker-rm-all='docker ps -a | awk "{print \$1}" | xargs docker rm -f'
 
 # Ctags mac
 $ISMAC && alias ctags="`brew --prefix`/bin/ctags"
+
+# Tree
+alias tree="tree -I '__pycache__'"
