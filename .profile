@@ -56,3 +56,5 @@ export LS_COLORS
 
 # Bash rc
 source "$XDG_CONFIG_HOME/bash/bashrc"
+
+export PATH="$HOME/.poetry/bin:$PATH"

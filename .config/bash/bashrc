@@ -22,7 +22,8 @@ export HISTSIZE=10000
 export HISTSIZEFILE=10000
 shopt -s histappend
 
-
+# Vi mode
+set -o vi
 
 bind '"\e[1;5A":history-search-backward'
 bind '"\e[1;5B":history-search-forward'
