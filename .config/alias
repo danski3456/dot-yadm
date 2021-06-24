@@ -13,8 +13,16 @@ alias ....="cd ../../.."
 
 # Git
 alias gs="git status"
-alias g="git"
 alias git-tree="git log --graph --abbrev-commit --pretty=oneline"
+
+alias g="git"
+__git_complete g __git_main
+
+alias go="git checkout"
+__git_complete go _git_checkout
+
+alias gp="git push"
+__git_complete gp _git_push
 
 # Neovim
 alias v="nvim"
@@ -36,3 +44,9 @@ $ISMAC && alias ctags="`brew --prefix`/bin/ctags"
 
 # Tree
 alias tree="tree -I '__pycache__'"
+
+# aws
+alias aws="docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli"
+
+# Poetry
+alias poe="poetry run"
