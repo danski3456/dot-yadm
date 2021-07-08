@@ -19,7 +19,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'jpalardy/vim-slime'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jeetsukumaran/vim-pythonsense'
 Plug 'pixelneo/vim-python-docstring'
 call plug#end()
@@ -57,7 +56,7 @@ set shortmess+=c
 " Statusline
 set nu rnu
 set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
-" set statusline+=%{gutentags#statusline()}
+set statusline+=%{gutentags#statusline()}
 
 " Use same column for numbers and errors
 set signcolumn=number
@@ -223,3 +222,20 @@ nmap <leader>f  <Plug>(coc-format-selected)
 " let g:gutentags_exclude_filetypes = ['gitcommit', 'gitconfig', 'gitrebase', 'gitsendemail', 'git']
 "
 set diffopt+=vertical
+
+
+"Gutentags
+let g:gutentags_modules = ['ctags']
+let g:gutentags_add_default_project_roots = 0
+let g:gutentags_project_root = ['package.json', '.git']
+
+let g:gutentags_cache_dir = expand('~/.cache/vim/ctags/')
+let g:gutentags_generate_on_new = 1
+let g:gutentags_generate_on_missing = 1
+let g:gutentags_generate_on_write = 1
+let g:gutentags_generate_on_empty_buffer = 0
+
+let g:gutentags_ctags_extra_args = [
+      \ '--tag-relative=yes',
+      \ '--fields=+ailmnS',
+      \ ]

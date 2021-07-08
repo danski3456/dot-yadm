@@ -61,3 +61,6 @@ export PATH="$HOME/.poetry/bin:$PATH"
 # Bash rc
 source "$XDG_CONFIG_HOME/bash/bashrc"
 
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
+

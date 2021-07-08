@@ -3,3 +3,5 @@
 	name = Diego Kiedanski
 [core]
 	editor = nvim
+[init]
+	templatedir = ~/.config/git/git_template

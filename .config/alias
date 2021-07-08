@@ -49,4 +49,4 @@ alias tree="tree -I '__pycache__'"
 alias aws="docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli"
 
 # Poetry
-alias poe="poetry run"
+alias poe="python -m poetry run"
