@@ -50,3 +50,5 @@ alias aws="docker run --rm -it -v ~/.aws:/root/.aws amazon/aws-cli"
 
 # Poetry
 alias poe="python -m poetry run"
+alias pos="poetry shell"
+alias da="deactivate"
