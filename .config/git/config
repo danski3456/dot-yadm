@@ -1,5 +1,5 @@
 [user]
-	email = dkiedanski@gmail.com
+	email = 49415614+danski3456@users.noreply.github.com
 	name = Diego Kiedanski
 [core]
 	editor = nvim
@@ -7,3 +7,8 @@
 	templatedir = ~/.config/git/git_template
 [pull]
 	rebase = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

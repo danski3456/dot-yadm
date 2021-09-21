@@ -18,3 +18,6 @@ abbr _cell # %%
 
 nnoremap <F8> :silent !black -S %<CR>
 nnoremap <F9> :silent !isort -S %<CR><CR>
+
+set tags=tags
+autocmd BufWritePost *.py silent! !ctags -R --python-kinds=-i --languages=python 2&gt; /dev/null &amp;
